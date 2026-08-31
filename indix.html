@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topup Sewa Nepal - Free Fire & Gaming Topup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        /* Header Style */
+        header {
+            background: linear-gradient(135deg, #1e272e, #0f171e);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 24px;
+            color: #f39c12;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+        .trust-badge {
+            background-color: #e67e22;
+            color: white;
+            font-size: 12px;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-left: 4px solid #f39c12;
+            padding-left: 8px;
+        }
+
+        /* Products Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            border: 1px solid #e1e8ed;
+        }
+
+        .product-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #95a5a6;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .buy-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .buy-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Checkout Form Section */
+        .checkout-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .checkout-btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .checkout-btn:hover {
+            background-color: #219653;
+        }
+
+        /* Updated Footer Style */
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: #1e272e;
+            color: #bdc3c7;
+            font-size: 13px;
+        }
+        .footer-links {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+        .footer-contact {
+            margin-top: 10px;
+            color: #ecf0f1;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Topup Sewa Nepal</h1>
+        <p>⚡ Sasto, Bharpardo ra Biswasilo Gaming Topup</p>
+        <div class="trust-badge">✅ 100% Trusted & Fastest Delivery</div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Free Fire Products -->
+        <h2 class="section-title">💎 Free Fire Diamond (UID Only)</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>110 Diamonds</h3>
+                <div class="price">Rs 100 <span class="old-price">Rs 120</span></div>
+                <button class="buy-btn" onclick="selectItem('110 Diamonds', 'Rs 100')">Select</button>
+            </div>
+            <div class="product-card">
+                <h3>240 Diamonds</h3>
+                <div class="price">Rs 199 <span class="old-price">Rs 240</span></div>
+                <button class="buy-btn" onclick="selectItem('240 Diamonds', 'Rs 199')">Select</button>
+            </div>
+            <div class="product-card">
+                <h3>610 Diamonds</h3>
+                <div class="price">Rs 490 <span class="old-price">Rs 530</span></div>
+                <button class="buy-btn" onclick="selectItem('610 Diamonds', 'Rs 490')">Select</button>
+            </div>
+            <div class="product-card">
+                <h3>1,080 Diamonds</h3>
+                <div class="price">Rs 850 <span class="old-price">Rs 950</span></div>
+                <button class="buy-btn" onclick="selectItem('1080 Diamonds', 'Rs 850')">Select</button>
+            </div>
+            <div class="product-card">
+                <h3>2,200 Diamonds</h3>
+                <div class="price">Rs 1,700 <span class="old-price">Rs 1,900</span></div>
+                <button class="buy-btn" onclick="selectItem('2200 Diamonds', 'Rs 1700')">Select</button>
+            </div>
+            <div class="product-card">
+                <h3>Weekly Membership</h3>
+                <div class="price">Rs 210 <span class="old-price">Rs 220</span></div>
+                <button class="buy-btn" onclick="selectItem('Weekly Membership', 'Rs 210')">Select</button>
+            </div>
+            <div class="product-card">
+                <h3>Monthly Membership</h3>
+                <div class="price">Rs 1000 <span class="old-price">Rs 1100</span></div>
+                <button class="buy-btn" onclick="selectItem('Monthly Membership', 'Rs 1000')">Select</button>
+            </div>
+        </div>
+
+        <!-- Order / Checkout Section -->
+        <div class="checkout-box">
+            <h2 class="section-title">🛒 Complete Your Order</h2>
+            <div class="form-group">
+                <label>Selected Item:</label>
+                <input type="text" id="selectedProduct" readonly placeholder="Click 'Select' on any item above">
+            </div>
+            <div class="form-group">
+                <label>Free Fire / PUBG Player UID:</label>
+                <input type="text" id="playerUid" placeholder="Aafno Game UID yeta lekhnus">
+            </div>
+            <div class="form-group">
+                <label>Payment Method:</label>
+                <select id="paymentMethod">
+                    <option value="eSewa">eSewa</option>
+                    <option value="Khalti">Khalti</option>
+                    <option value="IME Pay">IME Pay</option>
+                </select>
+            </div>
+            <button class="checkout-btn" onclick="checkoutOrder()">Order via WhatsApp 📱</button>
+        </div>
+
+    </div>
+
+    <!-- NAYA FOOTER CODE WITH SOCIAL LINKS & CONTACT -->
+    <footer>
+        <p>&copy; 2026 Topup Sewa Nepal. All Rights Reserved.</p>
+        
+        <div class="footer-links">
+            <a href="https:www.facebook.com/simpal.keto.470116" target="_blank">📘 Facebook Page</a>
+            <a href="https:www.tiktok.com/@cristen_boy55" target="_blank">🎵 TikTok Profile</a>
+        </div>
+
+        <div class="footer-contact">
+            <p>📞 Contact / WhatsApp: <strong>+977 9761182299</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        function selectItem(productName, price) {
+            document.getElementById('selectedProduct').value = productName + " (" + price + ")";
+            document.querySelector('.checkout-box').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function checkoutOrder() {
+            let product = document.getElementById('selectedProduct').value;
+            let uid = document.getElementById('playerUid').value;
+            let payment = document.getElementById('paymentMethod').value;
+
+            if(product === "") {
+                alert("Pahila kunai euta item select garnus!");
+                return;
+            }
+            if(uid === "") {
+                alert("Kripaya aafno Game UID lekhnus!");
+                return;
+            }
+
+            let message = `Hello Topup Sewa Nepal,%0AI want to buy:%0A- Item: ${product}%0A- Player UID: ${uid}%0A- Payment Via: ${payment}`;
+            let whatsappUrl = `https://wa.me/9761182299?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
